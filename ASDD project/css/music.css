@@ -1,0 +1,143 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #47adbd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montserrat;
+  text-align: center;
+}
+
+.glass {
+  background: white;
+  min-height: 90vh;
+  width: 80%;
+  background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  z-index: 2;
+}
+
+.player-container{
+
+  height: 0;
+}
+
+
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: 3px;
+  left: 50px;
+}
+
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+ 
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 8px;
+  width: 90%;
+}
+
+.progress {
+  background: #131212;
+  border-radius: 25px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -25px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(14, 13, 13);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(10%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 4px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
